@@ -13,6 +13,17 @@ const AppNavigator = createStackNavigator(
         DetailScreen : Detail,
         FavoritesScreen : Favorites,
     },
+    {
+        initialRouteName: 'CategoriesScreen',
+        defaultNavigationOptions : {
+            headerStyle : {
+                backgroundColor : 'purple'
+
+            },
+            headerTintColor : 'white'
+           
+        }
+      }
   );
 
   export default createAppContainer(AppNavigator);
