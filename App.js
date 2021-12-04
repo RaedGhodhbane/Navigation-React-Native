@@ -2,12 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font'
-import Apploading from 'expo-app-loading'
+import AppLoading from 'expo-app-loading'
+import Navigation from './Navigation/Navigation';
 
 const fetchFont = () => {
   return Font.loadAsync({
-    "regular" : require('./assets/fonts/Roboto-Bold.ttf'),
-    "bold" : require('./assets/fonts/Roboto-Regular.ttf')
+    "bold" : require('./assets/fonts/Roboto-Bold.ttf'),
+    "regular" : require('./assets/fonts/Roboto-Regular.ttf')
   })
 }
 
@@ -26,10 +27,7 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <Navigation/>
   );
 }
 
