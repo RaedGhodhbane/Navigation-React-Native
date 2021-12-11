@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
-export default function Favories() {
+export default function Favorites() {
     return (
         <View>
-            <Text> Favories </Text>
+            <Text> Favorites </Text>
         </View>
     )
 }

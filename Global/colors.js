@@ -9,5 +9,7 @@ export default {
     white: "#fff",
   
     grey: "#ccc",
+
+    red: "red",
   
   };

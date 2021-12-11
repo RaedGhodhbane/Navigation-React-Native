@@ -37,6 +37,7 @@ const renderItem = (itemData) => {
 Categorie.navigationOptions = (props) => {
     return {
         title : props.navigation.getParam('catName'),
+       
     };
         
 }
